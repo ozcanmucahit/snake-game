@@ -5,9 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   color:red;
+  border-radius: 10px;
   font-weight: bold;
   -moz-osx-font-smoothing: grayscale;
-  background-color:silver;
+  background-color: rgb(24, 23, 23);
 }
 
 code {
@@ -15,30 +16,37 @@ code {
     monospace;
 }
 
-
-.game-area {
-  position: relative;
-  margin: 50px auto;
-  width: 600px;
-  height: 600px;
-  border: 2px solid #000;
-  background:black
+input{
+  margin-top: 10px;
+  height: 30px;
+  line-height: 25px;
+  width: 100%;
+  text-indent: 10px;
+  margin-bottom: 10px;
 }
 
-.snake-dot {
-  position: absolute;
-  width: 2%;
-  height: 2%;
-  background-color:Red;
-  border: 1px solid #fff;
-
+.listArea{
+  margin: 0 auto;
 }
 
-.snake-food {
-  position: absolute;
-  width: 2%;
-  height: 2%;
-  background:yellow;
-  border: 1px solid #fff;
-  z-index: 1;
+.list li {
+background-color: rgb(247, 243, 243);
+border-bottom: 1px solid rgb(133, 133, 133);
+}
+
+.list li span{
+  display: block;
+}
+
+.list li span.name{
+  float: left;
+}
+
+
+.list li span.phone{
+   float: right;
+}
+
+.list li span.clearFix {
+clear: both;;
 }
